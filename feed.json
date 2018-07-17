@@ -9,5 +9,19 @@
         "name": "AxsoRsb"
     },
     "items": [
+        {
+            "id": "https://leaxeeel.github.io/web/site-bientot-operationnel.html",
+            "url": "https://leaxeeel.github.io/web/site-bientot-operationnel.html",
+            "title": "Site bientôt opérationnel",
+            "content_html": "<p>Bonjour,</p>\n<p>Je suis Axel, l'administrateur/gestionnaire du site.<br>J'écris ce post pour vous dire que le site sera bientôt opérationnel.</p>\n<p>Passez une bonne journée/soirée.</p>\n<p>Axel 😉</p>",
+            "image": "https://leaxeeel.github.io/web/media/posts/1/",
+            "author": {
+                "name": "AxsoRsb"
+            },
+            "tags": [
+            ],
+            "date_published": "2018-07-17T22:35:16+01:00",
+            "date_modified": "2018-07-17T22:35:16+01:00"
+        }
     ]
 }

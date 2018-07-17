@@ -3,10 +3,30 @@
     <title>Mon Blog</title>
     <link href="https://leaxeeel.github.io/web/feed.xml" rel="self" />
     <link href="https://leaxeeel.github.io/web" />
-    <updated>1970-01-01T00:00:00+00:00</updated>
+    <updated>2018-07-17T22:35:30+01:00</updated>
     <author>
         <name>AxsoRsb</name>
     </author>
     <id>https://leaxeeel.github.io/web</id>
 
+    <entry>
+        <title>Site bientôt opérationnel</title>
+        <author>
+            <name>AxsoRsb</name>
+        </author>
+        <link href="https://leaxeeel.github.io/web/site-bientot-operationnel.html"/>
+        <id>https://leaxeeel.github.io/web/site-bientot-operationnel.html</id>
+
+        <updated>2018-07-17T22:35:16+01:00</updated>
+            <summary></summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://leaxeeel.github.io/web/media/posts/1/" alt="" />
+                <p>Bonjour,</p>
+<p>Je suis Axel, l'administrateur/gestionnaire du site.<br>J'écris ce post pour vous dire que le site sera bientôt opérationnel.</p>
+<p>Passez une bonne journée/soirée.</p>
+<p>Axel 😉</p>
+            ]]>
+        </content>
+    </entry>
 </feed>

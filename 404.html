@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My blog - Mon Blog</title><meta name="robots" content="noindex, follow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://leaxeeel.github.io/web/"><link rel="amphtml" href=""><link type="application/atom+xml" rel="alternate" href="https://leaxeeel.github.io/web/feed.xml"><meta property="og:title" content="Mon Blog"><meta property="og:site_name" content="My blog - Mon Blog"><meta property="og:description" content=""><link rel="stylesheet" href="https://leaxeeel.github.io/web/assets/css/style.css?v=bdeb00d4611a734efb843fb9d6b62bcd"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Mon Blog","url":"https://leaxeeel.github.io/web"}</script><script async src="https://leaxeeel.github.io/web/assets/js/lazysizes.min.js?v=739e7d27e1cbc58b1b2e6882674b8867"></script><style>.top__search [type=search] {
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My blog - Mon Blog</title><meta name="robots" content="noindex, follow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://leaxeeel.github.io/web/"><link rel="amphtml" href=""><link type="application/atom+xml" rel="alternate" href="https://leaxeeel.github.io/web/feed.xml"><meta property="og:title" content="Mon Blog"><meta property="og:site_name" content="My blog - Mon Blog"><meta property="og:description" content=""><link rel="stylesheet" href="https://leaxeeel.github.io/web/assets/css/style.css?v=f1d053b27c966dc566ec9cafa2548ab8"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Mon Blog","url":"https://leaxeeel.github.io/web"}</script><script async src="https://leaxeeel.github.io/web/assets/js/lazysizes.min.js?v=739e7d27e1cbc58b1b2e6882674b8867"></script><style>.top__search [type=search] {
 						background-image: url(https://leaxeeel.github.io/web/assets/svg/search.svg);
 				    }</style></head><body><div class="container"><header class="js-top"><a class="logo" href="https://leaxeeel.github.io/web">Mon Blog</a><div class="top"><nav class="navbar js-navbar"><button class="navbar__toggle js-navbar__toggle" aria-expanded="false">Menu</button><ul class="navbar__menu"></ul></nav><div class="top__search"><form action="https://leaxeeel.github.io/web/search.html" class="search"><input type="search" name="q" placeholder="search..."></form></div></div></header><main><section class="hero hero--normal"><header><h1 class="hero__title">404</h1><p class="hero__desc">The page you were looking for appears to have been moved, deleted or does not exist. You could go back to where you were or head straight to our home page.</p></header></section></main><footer class="footer"><div class="footer__copyright">Powered by Publii</div></footer></div><script>var loadCSSFiles = function() {
                 var links = ['https://fonts.googleapis.com/css?family=PT+Serif:400,700|Muli:400,600'],
@@ -16,4 +16,79 @@
                 raf(loadCSSFiles);
             } else {
                 window.addEventListener('load', loadCSSFiles);
-            }</script><script defer="defer" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script><script defer="defer" src="https://leaxeeel.github.io/web/assets/js/scripts.min.js?v=5977caa3bd6c30eab5c559ded3288d58"></script></body></html>
+            }</script><script defer="defer" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script><script defer="defer" src="https://leaxeeel.github.io/web/assets/js/scripts.min.js?v=5977caa3bd6c30eab5c559ded3288d58"></script><div class="cookie-popup js-cookie-popup cookie-popup--uses-badge"><h2>Utilisation des cookies</h2><p>Nous utilisons des cookies pour vous assurer de vous fournir les meilleurs services. <a href="#not-specified">Plus de détails..</a></p><form><input id="gdpr-necessary" name="gdpr-necessary" checked="checked" disabled="disabled" type="checkbox"> <label for="gdpr-necessary">Required</label><p class="cookie-popup__save-wrapper"><button type="submit" class="cookie-popup__save">Enregistrer</button></p></form><span class="cookie-popup-label">Cookie Policy</span></div><script>(function() {
+                        function addScript (src, inline) {
+                            var newScript = document.createElement('script');
+        
+                            if (src) {
+                                newScript.setAttribute('src', src);
+                            }
+        
+                            if (inline) {
+                                newScript.text = inline;
+                            }
+        
+                            document.body.appendChild(newScript);
+                        }
+        
+                        var popup = document.querySelector('.js-cookie-popup');
+                        var checkboxes = popup.querySelectorAll('input[type="checkbox"]');
+                        var save = popup.querySelector('button');
+                        var currentConfig = localStorage.getItem('publii-gdpr-allowed-cookies');
+                        var blockedScripts = document.querySelectorAll('script[type^="gdpr-blocker/"]');
+                        
+        
+                        popup.addEventListener('click', function() {
+                            if (!popup.classList.contains('cookie-popup--is-sticky')) {
+                                popup.classList.add('cookie-popup--is-sticky');
+                            }
+                        });
+        
+                        save.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            popup.classList.remove('cookie-popup--is-sticky');
+                            var allowedGroups = [];
+        
+                            for (var i = 0; i < checkboxes.length; i++) {
+                                if (checkboxes[i].checked) {
+                                    var groupName = checkboxes[i].getAttribute('name').replace('gdpr-', '');
+                                    var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + groupName + '"]');
+        
+                                    for (var j = 0; j < scripts.length; j++) {
+                                        addScript(scripts[j].src, scripts[j].text);
+                                    }
+        
+                                    allowedGroups.push(groupName);
+                                }
+                            }
+        
+                            localStorage.setItem('publii-gdpr-allowed-cookies', allowedGroups.join(','));
+                            popup.classList.remove('cookie-popup--is-sticky');
+        
+                            setTimeout(function () {
+                                if (currentConfig) {
+                                    window.location.reload();
+                                }
+                            }, 250);
+                        });
+        
+                        if (!currentConfig) {
+                            popup.classList.add('cookie-popup--is-sticky');
+                        } else {
+                            var allowedGroups = currentConfig.split(',');
+        
+                            for (var i = 0; i < allowedGroups.length; i++) {
+                                var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + allowedGroups[i] + '"]');
+                                var checkbox = popup.querySelector('input[type="checkbox"][name="gdpr-' + allowedGroups[i] + '"]');
+        
+                                if (checkbox) {
+                                    checkbox.checked = true;
+                                }
+        
+                                for (var j = 0; j < scripts.length; j++) {
+                                    addScript(scripts[j].src, scripts[j].text);
+                                }
+                            }
+                        }
+                    })();</script></body></html>
